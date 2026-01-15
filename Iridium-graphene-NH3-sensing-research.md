@@ -9,6 +9,7 @@
 | Version | Date | Changes |
 |---------|------|---------|
 | v1 | 2026-01-15 | Initial literature synthesis from web searches |
+| v2 | 2026-01-15 | Added critical note on temperature limitations; added room temperature alternatives section |
 
 ---
 
@@ -19,8 +20,10 @@ This document explores the use of **iridium-based materials** (iridium black, ir
 ### Key Findings Summary
 
 - Iridium oxide (IrOx) decorated carbon nanotubes show **6-fold improvement** in NH₃ response vs bare CNTs
+- **Critical limitation**: IrOx-CNT chemiresistive sensors require **elevated temperature (100°C)** for optimal NH₃ response
 - Iridium-graphene composites are well-studied for **electrocatalysis** but underexplored for **gas sensing**
 - The IrOx sensing mechanism involves **redox interaction**: Ir(IV) ↔ Ir(III) with NH₃/NO₂
+- **Room temperature alternatives exist**: Electrochemical IrOx sensors and other noble metal-graphene composites (Au, Ag) operate at RT
 - **Research gap identified**: Direct iridium-graphene composites for NH₃ gas sensing
 
 ---
@@ -60,10 +63,23 @@ The most directly relevant research combines iridium oxide nanoparticles with mu
 | Parameter | Finding |
 |-----------|---------|
 | NH₃ response improvement | **6-fold increase** vs bare MWCNTs |
-| Optimal temperature | 100°C |
+| Optimal temperature | **100°C** (see critical note below) |
+| Temperatures tested | Room temp, 100°C, 150°C |
 | Humidity dependence | Stable at 50% RH |
-| Dual-gas capability | Also detects NO₂ |
+| Dual-gas capability | Also detects NO₂ (optimal at 150°C) |
 | Mechanism | Redox: Ir(IV) + NH₃ → Ir(III) |
+
+**⚠️ CRITICAL LIMITATION - Operating Temperature:**
+
+The IrOx-MWCNT chemiresistive sensor requires **elevated temperature (100°C) for optimal NH₃ response**. While the sensor does function at room temperature, the response is significantly lower. This is a practical limitation for many applications:
+
+| Temperature | NH₃ Response | NO₂ Response | Practicality |
+|-------------|--------------|--------------|--------------|
+| Room temp (~25°C) | Lower | Lower | Best for wearables/portable |
+| **100°C** | **Optimal** | Good | Requires heating element |
+| 150°C | Good | Optimal | Higher power consumption |
+
+**[PRACTICAL CONCERN]**: The need for 100°C operation adds complexity (heating element), increases power consumption, and limits use in wearable or battery-powered devices. For room temperature applications, consider the electrochemical approach (Section 3.2) or alternative materials (Section 3.3).
 
 **Sensing Mechanism:**
 - NH₃ exposure: Ir(IV) is **reduced** to Ir(III)
@@ -91,6 +107,47 @@ The most directly relevant research combines iridium oxide nanoparticles with mu
 - Reversible response
 - Selective detection
 - Optimized hydrogel for humidity stability
+- **Operates at room temperature** (key advantage over chemiresistive IrOx-CNT)
+
+### 3.3 Room Temperature Alternatives for NH₃ Sensing
+
+Given the temperature limitations of IrOx-based chemiresistive sensors, the following room temperature alternatives should be considered:
+
+#### Noble Metal-Graphene Composites (Chemiresistive, RT)
+
+| Material | RT Performance | Detection Limit | Key Advantage | Source |
+|----------|---------------|-----------------|---------------|--------|
+| **Au/PTh/rGO** | Best response among noble metals at RT | <5 ppm | Highest sensitivity in ternary composites | [PubMed](https://pubmed.ncbi.nlm.nih.gov/36214083/) |
+| **Ag-rGO** | Wireless RT sensor | Low ppm | Synergistic Ag-RGO adsorption; no heating needed | [Nature Sci. Rep.](https://www.nature.com/articles/s41598-019-46213-9) |
+| **Pt-GO** | 3x improvement vs pure GO | - | Well-characterized | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0925400516320974) |
+
+#### Chemically Reduced Graphene Oxide (RT)
+
+| Material | RT Performance | Detection Limit | Response Time | Source |
+|----------|---------------|-----------------|---------------|--------|
+| **Pyrrole-reduced GO** | Excellent sensitivity | **1 ppb** | **1.4 s** | [ACS AMI](https://pubs.acs.org/doi/abs/10.1021/am4019109) |
+| **Thermal rGO (250°C treated)** | Fast response | 100 ppm | 11 s | [Springer](https://link.springer.com/article/10.1007/s10853-023-08696-w) |
+
+#### Metal Oxide-Graphene Hybrids (RT)
+
+| Material | RT Performance | Selectivity | Humidity Stability | Source |
+|----------|---------------|-------------|-------------------|--------|
+| **Sn-TiO₂/rGO/CNT** | Ultrahigh selectivity | Excellent vs VOCs | 30-70% RH stable | [ACS Omega](https://pubs.acs.org/doi/10.1021/acsomega.9b02185) |
+| **MXene/GO/CuO/ZnO** | High signal-to-noise | Good | - | [ACS ANM](https://pubs.acs.org/doi/abs/10.1021/acsanm.3c01637) |
+| **PANI/N-GQD/In₂O₃** | High sensitivity | - | - | [PubMed](https://pubmed.ncbi.nlm.nih.gov/34771232/) |
+
+#### Electrochemical Sensors (RT)
+
+| Approach | Advantage | Limitation |
+|----------|-----------|------------|
+| **PEDOT/IrOx/hydrogel** | RT operation, wearable, selective | Electrolyte consumption over time |
+| **Solid-state electrochemical** | Long-term stability | More complex fabrication |
+
+**[RECOMMENDATION]**: For practical room temperature NH₃ sensing with graphene:
+1. **Best sensitivity**: Chemically reduced GO (1 ppb detection)
+2. **Best for wearables**: Au/PTh/rGO or Ag-rGO composites
+3. **Best selectivity**: Sn-TiO₂/rGO/CNT (humidity-independent)
+4. **If iridium required**: Use electrochemical (not chemiresistive) approach
 
 ---
 
@@ -248,6 +305,16 @@ Based on related literature:
 | 10 | ScienceDirect - "Pt nanoparticle decorated GO NH₃ sensor" | Paywalled | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0925400516320974) |
 | 11 | Nature Scientific Reports, 2019 - "Ag-rGO room temperature wireless NH₃ sensor" | Open Access | [Nature](https://www.nature.com/articles/s41598-019-46213-9) |
 
+### Room Temperature NH₃ Sensors (Additional Sources)
+
+| # | Citation | Access | Link |
+|---|----------|--------|------|
+| 12 | PubMed, 2022 - "Au, Ag, Pt/PTh/rGO ternary nanocomposites for RT NH₃ sensing" | Abstract | [PubMed](https://pubmed.ncbi.nlm.nih.gov/36214083/) |
+| 13 | ACS AMI, 2013 - "Chemically Reduced GO for Ammonia Detection at RT" | Paywalled | [ACS](https://pubs.acs.org/doi/abs/10.1021/am4019109) |
+| 14 | ACS Omega, 2019 - "Sn-TiO₂/rGO/CNT ultrahigh selective RT NH₃ sensor" | Open Access | [ACS Omega](https://pubs.acs.org/doi/10.1021/acsomega.9b02185) |
+| 15 | Springer, 2023 - "Thermal reduced GO for rapid RT ammonia detection" | Paywalled | [Springer](https://link.springer.com/article/10.1007/s10853-023-08696-w) |
+| 16 | ACS ANM, 2023 - "MXene/GO/CuO/ZnO RT NH₃ sensor" | Paywalled | [ACS ANM](https://pubs.acs.org/doi/abs/10.1021/acsanm.3c01637) |
+
 ---
 
 ## Summary
@@ -259,15 +326,25 @@ Based on related literature:
 - Graphene enhances Ir activity through electron donation
 - Other noble metals (Pt, Ag, Pd) on graphene are effective NH₃ sensors
 
+### Critical limitation identified:
+- **IrOx-CNT chemiresistive sensors require 100°C for optimal NH₃ response**
+- This limits practicality for wearable, portable, and battery-powered applications
+- Room temperature operation is possible but with significantly reduced response
+
+### Room temperature alternatives:
+- **Electrochemical IrOx sensors** (PEDOT/IrOx/hydrogel) work at RT
+- **Au/PTh/rGO** and **Ag-rGO** provide excellent RT chemiresistive sensing
+- **Chemically reduced GO** achieves 1 ppb detection at RT with 1.4 s response
+- **Sn-TiO₂/rGO/CNT** offers humidity-independent RT operation
+
 ### Research gap identified:
 - **No studies found** on direct Ir/IrOx-graphene composites for NH₃ gas sensing
-- This represents a potential research opportunity combining:
-  - Proven IrOx NH₃ sensing mechanism
-  - Superior properties of graphene vs CNTs
-  - Demonstrated Ir-graphene synergy in catalysis
+- This represents a potential research opportunity, but the temperature limitation of IrOx chemiresistive sensing should be considered
+- An electrochemical approach with Ir-graphene may be more practical than chemiresistive
 
 ### Recommended next steps:
-1. Review IrOx-MWCNT paper in detail for synthesis parameters
+1. **Prioritize electrochemical over chemiresistive** if RT operation is required
 2. Explore electrochemical deposition of IrOx on graphene electrodes
-3. Consider microwave-assisted synthesis for rapid Ir-graphene composite formation
-4. Compare chemiresistive vs electrochemical sensing modes
+3. Consider Au or Ag decoration of graphene as RT chemiresistive alternatives
+4. If elevated temperature is acceptable, IrOx-graphene chemiresistive approach remains viable
+5. Investigate whether graphene support could lower the optimal operating temperature for IrOx
