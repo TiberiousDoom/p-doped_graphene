@@ -4,6 +4,18 @@
 
 **This document synthesizes findings from web searches conducted on January 14, 2026. Where information is directly supported by sources, it is noted. Sections marked with [INFERENCE], [GENERALIZATION], or [RECOMMENDATION] indicate where I have extrapolated beyond the direct source material.**
 
+### Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| v2 | 2026-01-14 | Initial literature synthesis from web searches |
+| v3 | 2026-01-15 | Added full article links, additional open access resources, supplementary PDF reference, and expanded findings from recent literature |
+
+### Supporting Materials
+
+This repository includes a supplementary PDF:
+- **SI-Phosphorous-doped graphitic material as solid acid catalyst for microwaveassisted.pdf** - Supporting information from peer-reviewed research on P-doped graphitic materials as solid acid catalysts (64 pages). This document provides detailed experimental procedures and characterization data that complement the synthesis methods described below.
+
 ---
 
 ## 1. Overview
@@ -107,8 +119,11 @@ Microwave-assisted synthesis has emerged as an efficient method for producing ph
 | Phosphoric acid (H₃PO₄) | 85 wt% solution; most commonly cited | Multiple sources |
 | Phytic acid | Biomass-derived; dual C+P source | ACS Omega, Chem Eng J |
 | Triphenylphosphine (TPP) | Used in CVD method for P-doped mesoporous carbon | ScienceDirect (CVD synthesis paper) |
+| Triphenyl phosphate | Confirmed for microwave-assisted P-doping in <3 min | PMC4127501 (2014) |
 
 **[GENERALIZATION]**: The table in my original document listing P content percentages for each precursor (e.g., "H₃PO₄ = 31.6% P") was calculated from molecular formulas, not cited from these specific papers.
+
+**[UPDATE - From additional literature]**: The 2014 PMC study (PMC4127501) demonstrated that triphenyl phosphate can be used as a phosphorus source for microwave-assisted doping, achieving P-doped graphene in under 3 minutes. This same study showed the microwave method is generalizable to N, P, and B doping by simply changing the heteroatom precursor.
 
 ### 4.2 Carbon Sources (From Sources)
 
@@ -241,31 +256,116 @@ This section was almost entirely constructed from general chemistry reasoning an
 Based on my search, the following remain unclear:
 
 1. **Exact microwave parameters**: Specific power (watts) and precise irradiation times for optimal results were often not reported in the snippets I obtained
+   - *[UPDATE]* Some parameters now available: 750 W maximum power for N-doping (MDPI Molecules, 2021); 2 kW for microwave plasma (Scientific Reports, 2018)
 
 2. **Substitutional vs. surface P**: Whether microwave methods achieve true lattice substitution or primarily surface/edge functionalization is not fully clear
+   - *[UPDATE]* XPS studies in N-doped graphene show multiple bonding configurations (pyridinic, pyrrolic, quaternary); similar diversity likely exists for P
 
 3. **Reproducibility data**: Batch-to-batch variation and reproducibility statistics were not prominently featured
 
 4. **Scalability**: While sources mention "scalability," actual production quantities achieved were not specified
+   - *[UPDATE]* Gram-scale continuous production demonstrated for N-doped graphene (MDPI Processes, 2025); P-doping scale-up not yet reported
 
 5. **P bonding selectivity**: How to control the ratio of C-P vs. C-P-O vs. P-O configurations remains a challenge noted in the ORR review
+   - *[UPDATE]* For N-doping, configuration can be controlled by adjusting irradiation power (PubMed 24597537); similar control may be possible for P
 
 ---
 
 ## 11. Sources Consulted
 
-1. Chemical Engineering Journal, 2022 - "Microwave flash synthesis of phosphorus and sulphur ultradoped graphene"
-2. ACS Omega, 2020 - "Phosphorous-Doped Graphitic Material as a Solid Acid Catalyst"
-3. Applied Surface Science, 2018 - "Fabrication of the phosphorus doped mesoporous carbon with superior capacitive performance by microwave irradiation"
-4. Chemical Engineering Journal, 2023 - "Microwave-assisted synthesis of P-doped and O-rich graphitic carbon catalyst for vanadium redox flow batteries"
-5. MDPI Carbon, 2022 - "Synthesis of Graphene and Related Materials by Microwave-Excited Surface Wave Plasma CVD Methods"
-6. MDPI Nanomaterials, 2022 - "Phosphorus-Doped Graphene Electrocatalysts for Oxygen Reduction Reaction"
-7. PMC - "Electronic Structure of Nitrogen- and Phosphorus-Doped Graphenes Grown by Chemical Vapor Deposition Method"
-8. Journal of Energy Storage, 2022 - "Supercapacitor applications of novel phosphorus doped graphene-based electrodes"
-9. Nature Scientific Reports, 2018 - "Large-scale synthesis of free-standing N-doped graphene using microwave plasma"
-10. PMC - "Carbon-Based Electrocatalyst Design with Phytic Acid"
+### Primary Sources (with links)
 
-**Note**: Search result snippets provided partial information. Full paper access would be needed to verify all details and fill knowledge gaps.
+| # | Citation | Access | Link |
+|---|----------|--------|------|
+| 1 | Chemical Engineering Journal, 2022 - "Microwave flash synthesis of phosphorus and sulphur ultradoped graphene" | Paywalled | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1385894722039298) |
+| 2 | ACS Omega, 2020 - "Phosphorous-Doped Graphitic Material as a Solid Acid Catalyst for Microwave-Assisted Synthesis of β-Ketoenamines and Baeyer–Villiger Oxidation" | Open Access | [ACS Publications](https://pubs.acs.org/doi/10.1021/acsomega.0c01231) |
+| 3 | Applied Surface Science, 2018 - "Fabrication of the phosphorus doped mesoporous carbon with superior capacitive performance by microwave irradiation" | Paywalled | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0169433218319883) |
+| 4 | Chemical Engineering Journal, 2023 - "Microwave-assisted synthesis of P-doped and O-rich graphitic carbon catalyst for vanadium redox flow batteries" | Paywalled | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1385894723059296) |
+| 5 | MDPI AppliedChem, 2022 - "Synthesis of Graphene and Related Materials by Microwave-Excited Surface Wave Plasma CVD Methods" | Open Access | [MDPI](https://www.mdpi.com/2673-9623/2/3/12) |
+| 6 | MDPI Nanomaterials, 2022 - "Phosphorus-Doped Graphene Electrocatalysts for Oxygen Reduction Reaction" | Open Access | [MDPI](https://www.mdpi.com/2079-4991/12/7/1141) / [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9000525/) |
+| 7 | Materials (Basel), 2020 - "Electronic Structure of Nitrogen- and Phosphorus-Doped Graphenes Grown by Chemical Vapor Deposition Method" | Open Access | [MDPI](https://www.mdpi.com/1996-1944/13/5/1173) / [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7085186/) |
+| 8 | Journal of Energy Storage, 2022 - "Supercapacitor applications of novel phosphorus doped graphene-based electrodes" | Paywalled | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S2352152X22017546) |
+| 9 | Scientific Reports, 2018 - "Large-scale synthesis of free-standing N-doped graphene using microwave plasma" | Open Access | [Nature](https://www.nature.com/articles/s41598-018-30870-3) / [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6105711/) |
+| 10 | Int. J. Mol. Sci., 2022 - "Carbon-Based Electrocatalyst Design with Phytic Acid—A Versatile Biomass-Derived Modifier" | Open Access | [MDPI](https://www.mdpi.com/1422-0067/23/19/11282) / [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9569981/) |
+
+**Note**: Search result snippets provided partial information. Full paper access would be needed to verify all details and fill knowledge gaps. Six of the ten primary sources are freely available as open access publications.
+
+### Additional Open Access Resources
+
+The following open access publications provide supplementary information on microwave-assisted heteroatom doping of graphene. While some focus on N, S, or B doping rather than P specifically, the synthesis principles and characterization methods are directly transferable.
+
+#### General Heteroatom Doping via Microwave
+
+| Year | Title | Journal | Link | Key Relevance |
+|------|-------|---------|------|---------------|
+| 2014 | The microwave adsorption behavior and microwave-assisted heteroatoms doping of graphene-based nano-carbon materials | Scientific Reports | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC4127501/) | **Demonstrates N, P, B doping in <3 min using microwave; triphenyl phosphate as P source** |
+| 2023 | Microwave-Assisted Synthesis as a Promising Tool for the Preparation of Materials Containing Defective Carbon Nanostructures | PMC | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10573823/) | N,S co-doping achieving 14.9% N + 4.3% S; 310 F/g capacitance |
+| 2022 | Heteroatom Codoped Graphene: The Importance of Nitrogen | PMC | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9773818/) | Review of codoping strategies including microwave hydrothermal |
+| 2022 | Heteroatom-doped graphene as sensing materials: a mini review | RSC Advances | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9055927/) | N-S co-doped graphene via microwave solvothermal |
+
+#### Nitrogen-Doped Graphene via Microwave (Transferable Methods)
+
+| Year | Title | Journal | Link | Key Findings |
+|------|-------|---------|------|--------------|
+| 2025 | Microwave Plasma-Driven Synthesis of Graphene and N-Graphene at a Gram Scale | MDPI Processes | [MDPI](https://www.mdpi.com/2227-9717/13/1/196) | Gram-scale continuous production at atmospheric pressure |
+| 2024 | The Effect of Sulfur and Nitrogen Doping on the Oxygen Reduction Performance of Graphene/Iron Oxide Electrocatalysts | MDPI Nanomaterials | [MDPI](https://www.mdpi.com/2079-4991/14/7/560) | N/S co-doping via 10-20 min microwave synthesis |
+| 2021 | Effect of Nitrogen Doping on the Optical Bandgap and Electrical Conductivity of N-rGO | MDPI Molecules | [MDPI](https://www.mdpi.com/1420-3049/26/21/6424) | Up to 5.51 at.% N doping; tunable bandgap 2.2-3.4 eV |
+| 2021 | Microwave-Assisted Synthesis of N/S Doped Graphene Decorated with Antimony Oxide | MDPI Materials | [MDPI](https://www.mdpi.com/1996-1944/15/1/10) | One-pot microwave N/S co-doping for ORR |
+| 2020 | Simultaneous Synthesis and Nitrogen Doping of Free-Standing Graphene Applying Microwave Plasma | MDPI Materials | [MDPI](https://www.mdpi.com/1996-1944/13/18/4213) | Single-step atmospheric pressure synthesis |
+| 2020 | A Review of Strategies for the Synthesis of N-Doped Graphene-Like Materials | MDPI Nanomaterials | [MDPI](https://www.mdpi.com/2079-4991/10/11/2286) | Comprehensive review including microwave methods |
+
+#### Microwave Synthesis for Supercapacitors
+
+| Year | Title | Journal | Link | Performance Data |
+|------|-------|---------|------|------------------|
+| 2023 | Microwave synthesis of antimony oxide graphene nanoparticles – a new electrode material for supercapacitors | RSC Nanoscale Advances | [RSC](https://pubs.rsc.org/en/content/articlehtml/2023/na/d3na00514c) | Novel electrode materials |
+| 2023 | Microwave-assisted synthesis of carbon-based nanomaterials from biobased resources | Frontiers in Carbon | [Frontiers](https://www.frontiersin.org/journals/carbon/articles/10.3389/frcrb.2023.1220021/full) | Biobased precursors including phytic acid |
+
+---
+
+## 12. Comparative Insights from Related Heteroatom Doping Studies
+
+The additional literature search revealed important insights applicable to P-doped graphene synthesis:
+
+### 12.1 Doping Levels Achieved via Microwave Methods
+
+| Heteroatom | Max Doping Level | Method | Source |
+|------------|-----------------|--------|--------|
+| Phosphorus | ~15 at.% | Microwave flash heating | Chemical Engineering Journal, 2022 |
+| Nitrogen | 8.1 at.% | Microwave irradiation of bulk graphite | PubMed 24597537 |
+| Nitrogen | 5.51 at.% | Microwave hydrothermal | MDPI Molecules, 2021 |
+| N + S | 14.9% N + 4.3% S | One-pot microwave | PMC10573823 |
+| Sulfur | Optimal at 0.25 M | Microwave-assisted | ScienceDirect |
+
+### 12.2 Synthesis Time Comparisons
+
+| Method | Time | Atmosphere | Scale |
+|--------|------|------------|-------|
+| Microwave flash (P-doping) | Seconds | Ambient | mg scale |
+| Microwave plasma (N-doping) | Continuous | Atmospheric | Gram scale |
+| Microwave hydrothermal | 6-100 seconds | Sealed vessel | mg scale |
+| Microwave irradiation (N,P,B) | <3 minutes | Ambient | mg scale |
+| Conventional thermal | >48 hours | Often inert | Variable |
+
+### 12.3 Key Advantages of Microwave Synthesis (From Literature)
+
+1. **Speed**: 100-1000x faster than conventional methods
+2. **Atmosphere**: Can operate at ambient/atmospheric pressure
+3. **Energy**: Significantly lower energy consumption
+4. **Scalability**: Gram-scale continuous production demonstrated (MDPI Processes, 2025)
+5. **Versatility**: Same equipment can be used for N, P, B, S doping by changing precursors
+6. **Green chemistry**: No catalysts, solvents, or additional heating required in plasma methods
+
+### 12.4 Supercapacitor Performance Comparison (Microwave-Synthesized Materials)
+
+| Material | Specific Capacitance | Retention | Energy/Power Density | Source |
+|----------|---------------------|-----------|---------------------|--------|
+| P-doped mesoporous carbon | 210 F/g | 97.39% @ 10k cycles | - | Applied Surface Science, 2018 |
+| P-doped exfoliated graphene | 367 F/g | - | 59 Wh/kg, 9 kW/kg | PubMed |
+| N,S-doped graphene | 310 F/g | - | - | PMC10573823 |
+| S-doped rGO | 237.6 F/g | 106% @ 10k cycles | - | ScienceDirect |
+| Fe₃O₄/rGO composite | 771.3 F/g | 95.1% @ 5k cycles | - | ScienceDirect |
+| Microwave rGO | - | - | 45 Wh/kg, 700 W/kg | Springer, 2023 |
 
 ---
 
@@ -274,13 +374,22 @@ Based on my search, the following remain unclear:
 **What the sources clearly support:**
 - Microwave synthesis achieves P-doping in seconds to minutes
 - Doping levels up to ~15 at.% are achievable
-- Phytic acid and H₃PO₄ are effective P sources
+- Phytic acid, H₃PO₄, and triphenyl phosphate are effective P sources
 - Ambient atmosphere synthesis is possible due to polyphosphoric acid protection
 - Excellent supercapacitor performance (210-367 F/g range)
 - Room temperature ferromagnetism at ~0.13 emu/g
+- Gram-scale continuous production is achievable with microwave plasma methods
+- The same microwave approach works for N, P, B, and S doping by changing precursors
 
 **What requires further verification:**
-- Optimal microwave power settings
-- Detailed step-by-step protocols
+- Optimal microwave power settings for P-doping specifically
+- Detailed step-by-step protocols with reproducible parameters
 - True substitutional P doping vs. surface functionalization
 - Long-term stability and reproducibility data
+- Scale-up parameters for P-doping (N-doping has been scaled to gram quantities)
+
+**Key takeaways from expanded literature review:**
+- Microwave synthesis is 100-1000x faster than conventional thermal methods
+- Co-doping (e.g., N+S, N+P) is achievable in one-pot microwave synthesis
+- Microwave methods are considered "green chemistry" - no catalysts or solvents required in plasma approaches
+- Performance metrics are competitive with or exceed conventionally synthesized materials
